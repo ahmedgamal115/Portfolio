@@ -1,0 +1,82 @@
+.certificatesContainter{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.content{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CertificatesData{
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    row-gap: 15px;
+    overflow: auto;
+}
+.CertificatesData::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  .CertificatesData::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .CertificatesData::-webkit-scrollbar-thumb {
+    background: rgb(189, 113, 113);
+  }
+  
+.CertificatesDatils{
+    width: 450px;
+    height: 300px;
+    background: rgb(10,87,208);
+    background: linear-gradient(25deg, rgb(0, 0, 0) 0%, rgb(255, 98, 98) 100%, rgba(81,13,13,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CertificatesImage{
+    position: relative;
+    width: 95%;
+    height: 95%;
+    background-color: black;
+}
+.layout{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.397);
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.layout:hover{
+    background: rgb(10,87,208);
+    background: linear-gradient(0deg, rgba(10,87,208,0.7036064425770308) 0%, rgba(0, 0, 0, 0.44) 100%, rgba(81,13,13,1) 100%);
+}
+.layout span{
+    font-weight: 700;
+    font-size: 30px;
+    color: aliceblue;
+}
+.company{
+    font-weight: 700;
+    font-size: 20px;
+    color: aliceblue;
+    font-style: italic;
+}
+.CertificatesImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

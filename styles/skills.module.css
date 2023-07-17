@@ -1,0 +1,113 @@
+.skillsContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.skillsContent{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    overflow: hidden;
+}
+.normalSkills{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.skilsDetails{
+    height: 50px;
+}
+.skillsPrograss{
+    display: flex;
+    align-items: center;
+}
+
+.animate_progress {
+    width: 300px;
+    height: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(96, 96, 96);
+    overflow: hidden;
+    position: relative;
+}
+  
+.animate_progress span {
+    height: 100%;
+    display: block;
+    color: rgb(255, 251, 251);
+    line-height: 30px;
+    position: absolute;
+    text-align: end;
+    padding-right: 5px;
+    background-color: rgb(189, 113, 113);
+}
+
+.personSkills{
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.personSkillsContent{
+    margin-left: 15px;
+    width: 700px;
+    height: 50%;
+    display: grid;
+    grid-template-columns:auto auto auto;
+    align-items: center;
+}
+.personSkillsDatails{
+    position: relative;
+    width: 180px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(47, 47, 47);
+}
+.icon{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 113, 113);
+}
+
+.controller{
+    width: 10%;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.controllerBtn{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(189, 113, 113);
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 30px;
+    font-weight: 700;
+    height: inherit;
+    cursor: pointer;
+}

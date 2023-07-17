@@ -1,0 +1,35 @@
+.navbar_continer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    padding: 60px 20px 20px 20px;
+    align-items: center;
+}
+.name{
+    width: 80%;
+    font-weight: 700;
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    margin-left: 20px;
+}
+.Social_media{
+    position: relative;
+    width: 15%;
+    z-index: 9999;
+}
+.Social_media ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Social_media ul li{
+    cursor: pointer;
+}
+.sidebar_icon{
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
