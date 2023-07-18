@@ -1,9 +1,13 @@
 import skillsStyle from '@/styles/skills.module.css'
 import PageNumber from './PageNumber'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 const Skills = () => {
     const [personalSkills,setPersonalSkills] = useState(false)
+    const [matches, setMatches] = useState(
+        // window.matchMedia("(min-width: 600px)").matches
+        false
+    )
     const handlePage = ()=>{
         if(personalSkills){
             setPersonalSkills(false)
@@ -11,12 +15,17 @@ const Skills = () => {
             setPersonalSkills(true)
         }
     }
+    useEffect(()=>{
+       if(window.innerHeight > window.innerWidth){
+        setMatches(true)
+       }
+    },[])
     return(
         <>
             <div className={skillsStyle.skillsContainer}>
                 <PageNumber number={'3'} title={!personalSkills ? 'Skills' : 'Personal skills'}></PageNumber>
                 <div className={skillsStyle.skillsContent}>
-                    <div style={{marginLeft:`${personalSkills ? '-800px' : ''}`}} className={skillsStyle.normalSkills}>
+                    <div style={{marginLeft:`${personalSkills ? !matches ? '-800px': '-210px' : ''}`}} className={skillsStyle.normalSkills}>
                         <div className={skillsStyle.skilsDetails}>
                             <div className={skillsStyle.skillsTitle}>HTML</div>
                             <div className={skillsStyle.skillsPrograss}>

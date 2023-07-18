@@ -111,3 +111,25 @@
     height: inherit;
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    .normalSkills{
+        width: 95%;
+        height: 100%;
+        grid-template-columns: auto;
+        overflow-y: auto;
+    }
+    .animate_progress {
+        width: 150px;
+    }
+    .personSkillsContent{
+        width: 90%;
+        grid-template-columns: auto;
+        height: 100%;
+        overflow-y: auto;
+        justify-content: center;
+    }
+    .personSkillsDatails{
+        width: 150px;
+    }
+}

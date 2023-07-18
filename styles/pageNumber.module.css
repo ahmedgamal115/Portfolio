@@ -34,3 +34,17 @@
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .pageNumber{
+        font-size: 5em;
+    }
+    .lineStyle{
+        width: 6px;
+        height: 100px;
+    }
+    .pageTitle{
+        font-size: 15px;
+        width: 200%;
+    }
+}

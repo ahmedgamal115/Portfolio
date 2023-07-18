@@ -78,3 +78,74 @@
     align-items: center;
     justify-content: space-around;
 }
+@media only screen and (max-width: 600px) {
+    .aboutContant{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagePosition{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    .border{
+        width: 100px;
+        height: 150px;
+
+    }
+    .contact{
+        width: 100%;
+    }
+    .Intro{
+        font-size: 14px;
+        line-height: 1.8em;
+    }
+    .Info{
+        row-gap: 10px;
+        column-gap: 10px;
+        text-align: center;
+    }
+    .sec_title{
+        font-size: 14px;
+    }
+    .sec_data{
+        font-weight: 600;
+        font-size: 12px;
+    }
+    .contact_Me{
+        margin-top: 20px;
+    }
+    .contact_title{
+        font-size: 14px;
+        color: rgb(250, 162, 0);
+        font-weight: 400;
+    }
+    .tools{
+        grid-template-columns: auto;
+        align-items: center;
+        margin-top: 10px;
+    }
+    .e_mail{
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .e_mail svg{
+       margin-right: 20px;
+    }
+    .phone{
+        font-size: 12px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 10px;
+    }
+    .phone svg{
+        margin-right: 20px;
+     }
+}

@@ -33,3 +33,30 @@
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+    .name {
+        width: 60%;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .navbar_continer{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        padding: 10px 0px 0px 0px;
+        align-items: center;
+    }
+    .Social_media{
+        width: 40%;
+        margin-right: 10px;
+    }
+    .Social_media ul li svg{
+        width: 20px;
+        height: 20px;
+    }
+    .sidebar_icon{
+        display: none;
+    }
+  }

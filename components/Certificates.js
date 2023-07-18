@@ -68,8 +68,6 @@ const Certificates = () =>{
                                 <img src="/Certificates/3.jpg" alt="" />
                             </div>
                         </div>
-                        
-                        
                     </div>
                 </div>
             </div>
